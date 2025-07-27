@@ -6,7 +6,7 @@ const Resume = () => {
   const education = [
     {
       degree: "Bachelor in Artificial Intelligence and Machine Learning",
-      institution: "NALANDA COLLEGE OF ENGINNERING",
+      institution: "NALANDA COLLEGE OF ENGINEERING",
       year: "2024-2028",
       highlights: ["Web Development", "Data Structures", "Software Engineering"]
     }
