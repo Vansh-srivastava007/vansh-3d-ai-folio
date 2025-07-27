@@ -6,9 +6,9 @@ const Projects = () => {
   // Placeholder project cards
   const placeholderProjects = [
     {
-      title: "AI Automation Platform",
-      description: "Building intelligent workflows with modern tech stack",
-      tags: ["React", "Node.js", "AI/ML"],
+      title: "SaaS Application",
+      description: "Cloud-based software solution with MERN stack",
+      tags: ["MongoDB", "Express", "React", "Node.js"],
     },
     {
       title: "Blockchain DApp",
