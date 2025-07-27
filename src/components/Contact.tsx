@@ -16,11 +16,25 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
+    
+    // Create structured email content
+    const emailData = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message
+    };
+    
+    const subject = `Portfolio Contact: Message from ${formData.name}`;
+    const body = `${JSON.stringify(emailData, null, 2)}\n\n---\nThis is a structured message from your portfolio contact form.`;
+    
+    // Open default email client with structured data
+    window.location.href = `mailto:vanshsrivastava12345@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
     toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
+      title: "Opening email client...",
+      description: "Your default email app will open with the message pre-filled.",
     });
+    
     setFormData({ name: "", email: "", message: "" });
   };
 

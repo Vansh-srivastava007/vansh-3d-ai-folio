@@ -2,13 +2,13 @@ import { Badge } from "@/components/ui/badge";
 const About = () => {
   const skills = [
     // Front-End
-    "HTML5 & CSS3", "JavaScript (ES6+)", "React.js", "Next.js", "Tailwind CSS", "Chakra UI", "Material-UI",
+    "HTML5 & CSS3", "JavaScript (ES6+)", "React.js", "Next.js", "Tailwind CSS",
     // Back-End  
-    "Node.js", "Express.js", "GraphQL", "JWT", "OAuth2", "Passport.js",
+    "Node.js", "Express.js", "GraphQL", "JWT", "OAuth2",
     // Databases
-    "MongoDB", "PostgreSQL",
+    "MongoDB",
     // DevOps & Hosting
-    "Git & GitHub", "CI/CD", "Docker", "Vercel", "Netlify", "Heroku", "AWS",
+    "Git & GitHub", "Docker",
     // AI & Automation
     "Python", "OpenAI", "LangChain", "n8n", "Zapier",
     // Blockchain & Web3
