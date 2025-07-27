@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Linkedin, Twitter, Send, Mail } from "lucide-react";
+import { Github, Linkedin, Send, Mail } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -35,20 +35,14 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/vansh-srivastava",
-      handle: "@vansh-srivastava"
+      url: "https://github.com/Vansh-srivastava007",
+      handle: "Vansh-srivastava007"
     },
     {
       name: "LinkedIn", 
       icon: Linkedin,
-      url: "https://linkedin.com/in/vansh-srivastava",
-      handle: "vansh-srivastava"
-    },
-    {
-      name: "Twitter",
-      icon: Twitter,
-      url: "https://twitter.com/vansh_dev",
-      handle: "@vansh_dev"
+      url: "https://www.linkedin.com/in/vansh-srivastava-devloper007",
+      handle: "vansh-srivastava-devloper007"
     }
   ];
 
@@ -179,7 +173,7 @@ const Contact = () => {
                 </div>
                 <h3 className="font-semibold text-portfolio-text-primary mb-2">Direct Email</h3>
                 <p className="text-portfolio-text-secondary">
-                  vansh.srivastava@example.com
+                  vanshsrivastava12345@gmail.com
                 </p>
               </div>
             </CardContent>
