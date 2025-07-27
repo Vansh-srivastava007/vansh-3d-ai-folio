@@ -1,18 +1,7 @@
 import { Badge } from "@/components/ui/badge";
-
 const About = () => {
-  const skills = [
-    "Node.js",
-    "Express",
-    "React", 
-    "MongoDB",
-    "Three.js",
-    "Spline",
-    "Solidity (basic)"
-  ];
-
-  return (
-    <section className="py-20 px-6 max-w-6xl mx-auto">
+  const skills = ["Node.js", "Express", "React", "MongoDB", "Three.js", "Spline", "Solidity (basic)"];
+  return <section className="py-20 px-6 max-w-6xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-start">
         {/* About Text */}
         <div>
@@ -44,15 +33,9 @@ const About = () => {
           </h3>
           
           <div className="grid grid-cols-2 gap-4">
-            {skills.map((skill) => (
-              <Badge 
-                key={skill}
-                variant="secondary"
-                className="bg-portfolio-accent/10 text-portfolio-accent border-portfolio-accent/20 hover:bg-portfolio-accent/20 transition-colors p-3 text-center justify-center"
-              >
+            {skills.map(skill => <Badge key={skill} variant="secondary" className="bg-portfolio-accent/10 text-portfolio-accent border-portfolio-accent/20 hover:bg-portfolio-accent/20 transition-colors p-3 text-center justify-center">
                 {skill}
-              </Badge>
-            ))}
+              </Badge>)}
           </div>
 
           {/* Additional Stats */}
@@ -62,14 +45,13 @@ const About = () => {
               <div className="text-sm text-portfolio-text-secondary">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-portfolio-accent">10+</div>
-              <div className="text-sm text-portfolio-text-secondary">Projects Built</div>
+              
+              <div className="text-sm text-portfolio-text-secondary">Multiple 
+Projects Built</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
