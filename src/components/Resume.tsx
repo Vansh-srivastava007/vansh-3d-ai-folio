@@ -5,7 +5,7 @@ import { Download, GraduationCap, Briefcase, Calendar } from "lucide-react";
 const Resume = () => {
   const education = [
     {
-      degree: "Bachelor of Technology in Computer Science",
+      degree: "Bachelor in Artificial Intelligence and Machine Learning",
       institution: "Your University Name",
       year: "2020-2024",
       highlights: ["Web Development", "Data Structures", "Software Engineering"]
