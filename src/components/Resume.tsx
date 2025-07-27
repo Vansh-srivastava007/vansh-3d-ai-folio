@@ -22,7 +22,7 @@ const Resume = () => {
   ];
 
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto">
+    <section id="resume" className="py-20 px-6 max-w-6xl mx-auto">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-portfolio-text-primary mb-4">
           Resume & <span className="text-gradient">Experience</span>

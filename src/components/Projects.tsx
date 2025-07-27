@@ -23,7 +23,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto">
+    <section id="projects" className="py-20 px-6 max-w-6xl mx-auto">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-portfolio-text-primary mb-4">
           Featured <span className="text-gradient">Projects</span>

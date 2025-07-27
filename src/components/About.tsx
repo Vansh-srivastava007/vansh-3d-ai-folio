@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 const About = () => {
   const skills = ["Node.js", "Express", "React", "MongoDB", "Three.js", "Spline", "Solidity (basic)"];
-  return <section className="py-20 px-6 max-w-6xl mx-auto">
+  return <section id="about" className="py-20 px-6 max-w-6xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-start">
         {/* About Text */}
         <div>
