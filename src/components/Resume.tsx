@@ -18,12 +18,6 @@ const Resume = () => {
       company: "Tech Startup / Freelance",
       period: "2024-Present",
       highlights: ["MERN Stack Development", "AI Integration", "Blockchain Exploration"]
-    },
-    {
-      role: "Frontend Developer Intern",
-      company: "Previous Company",
-      period: "2021-2022", 
-      highlights: ["React Development", "UI/UX Implementation", "Team Collaboration"]
     }
   ];
 
