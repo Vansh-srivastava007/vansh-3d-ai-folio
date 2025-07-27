@@ -16,7 +16,7 @@ const Resume = () => {
     {
       role: "Full Stack Developer",
       company: "Tech Startup / Freelance",
-      period: "2022-Present",
+      period: "2024-Present",
       highlights: ["MERN Stack Development", "AI Integration", "Blockchain Exploration"]
     },
     {
