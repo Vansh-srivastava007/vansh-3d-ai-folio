@@ -1,6 +1,19 @@
 import { Badge } from "@/components/ui/badge";
 const About = () => {
-  const skills = ["Node.js", "Express", "React", "MongoDB", "Three.js", "Spline", "Solidity (basic)"];
+  const skills = [
+    // Front-End
+    "HTML5 & CSS3", "JavaScript (ES6+)", "React.js", "Next.js", "Tailwind CSS", "Chakra UI", "Material-UI",
+    // Back-End  
+    "Node.js", "Express.js", "GraphQL", "JWT", "OAuth2", "Passport.js",
+    // Databases
+    "MongoDB", "PostgreSQL",
+    // DevOps & Hosting
+    "Git & GitHub", "CI/CD", "Docker", "Vercel", "Netlify", "Heroku", "AWS",
+    // AI & Automation
+    "Python", "OpenAI", "LangChain", "n8n", "Zapier",
+    // Blockchain & Web3
+    "Solidity", "Ethers.js", "Web3.js", "Polygon", "Ethereum"
+  ];
   return <section id="about" className="py-20 px-6 max-w-6xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-start">
         {/* About Text */}
@@ -32,10 +45,12 @@ const About = () => {
             Technical Skills
           </h3>
           
-          <div className="grid grid-cols-2 gap-4">
-            {skills.map(skill => <Badge key={skill} variant="secondary" className="bg-portfolio-accent/10 text-portfolio-accent border-portfolio-accent/20 hover:bg-portfolio-accent/20 transition-colors p-3 text-center justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {skills.map(skill => 
+              <Badge key={skill} variant="secondary" className="bg-portfolio-accent/10 text-portfolio-accent border-portfolio-accent/20 hover:bg-portfolio-accent/20 transition-colors p-2 text-center justify-center text-xs">
                 {skill}
-              </Badge>)}
+              </Badge>
+            )}
           </div>
 
           {/* Additional Stats */}

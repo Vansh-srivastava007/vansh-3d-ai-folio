@@ -46,6 +46,12 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-portfolio-accent hover:bg-portfolio-accent/90 text-portfolio-card font-semibold px-8 py-3 glow-effect"
+            onClick={() => {
+              const element = document.getElementById('projects');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             View My Work
           </Button>
@@ -53,6 +59,12 @@ const Hero = () => {
             variant="outline" 
             size="lg"
             className="border-portfolio-accent text-portfolio-accent hover:bg-portfolio-accent hover:text-portfolio-card px-8 py-3"
+            onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             Get In Touch
           </Button>

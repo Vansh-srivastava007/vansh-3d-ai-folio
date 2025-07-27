@@ -172,9 +172,12 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-portfolio-accent" />
                 </div>
                 <h3 className="font-semibold text-portfolio-text-primary mb-2">Direct Email</h3>
-                <p className="text-portfolio-text-secondary">
+                <a 
+                  href="mailto:vanshsrivastava12345@gmail.com"
+                  className="text-portfolio-accent hover:text-portfolio-accent/80 transition-colors underline"
+                >
                   vanshsrivastava12345@gmail.com
-                </p>
+                </a>
               </div>
             </CardContent>
           </Card>
