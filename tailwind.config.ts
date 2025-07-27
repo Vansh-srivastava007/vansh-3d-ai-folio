@@ -18,12 +18,24 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				portfolio: {
+					bg: 'hsl(var(--portfolio-bg))',
+					card: 'hsl(var(--portfolio-card))',
+					accent: 'hsl(var(--portfolio-accent))',
+					'accent-glow': 'hsl(var(--portfolio-accent-glow))',
+					'text-primary': 'hsl(var(--portfolio-text-primary))',
+					'text-secondary': 'hsl(var(--portfolio-text-secondary))',
+					border: 'hsl(var(--portfolio-border))',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
