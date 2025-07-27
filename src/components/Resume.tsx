@@ -34,9 +34,10 @@ const Resume = () => {
         <Button 
           size="lg"
           className="bg-portfolio-accent hover:bg-portfolio-accent/90 text-portfolio-card font-semibold px-8 py-3 glow-effect"
+          onClick={() => window.open('https://drive.google.com/file/d/1Ku0JVvz4AVJJ53EO70jqEVCE4g_axK1p/view?usp=drivesdk', '_blank')}
         >
           <Download className="w-5 h-5 mr-2" />
-          Download Resume (PDF)
+          Resume
         </Button>
       </div>
 

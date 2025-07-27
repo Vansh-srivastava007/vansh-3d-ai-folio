@@ -17,18 +17,15 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create structured email content
-    const emailData = {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message
-    };
-    
+    // Create clean structured email content
     const subject = `Portfolio Contact: Message from ${formData.name}`;
-    const body = `${JSON.stringify(emailData, null, 2)}\n\n---\nThis is a structured message from your portfolio contact form.`;
+    const body = `Name: ${formData.name}
+Email: ${formData.email}
+Message: ${formData.message}`;
     
-    // Open default email client with structured data
+    // Open default email client with clean structured data
     window.location.href = `mailto:vanshsrivastava12345@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
     
     toast({
       title: "Opening email client...",
