@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto rounded-full overflow-hidden glass-card glow-effect">
             <img 
-              src={vanshHeadshot} 
+              src="/lovable-uploads/b92b2639-1fd0-4891-a2c3-d37578439a0a.png" 
               alt="Vansh Srivastava"
               className="w-full h-full object-cover"
             />
