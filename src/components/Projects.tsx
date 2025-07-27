@@ -16,9 +16,9 @@ const Projects = () => {
       tags: ["Solidity", "Web3", "React"],
     },
     {
-      title: "3D Portfolio Experience",
-      description: "Interactive portfolio with Three.js and Spline",
-      tags: ["Three.js", "Spline", "WebGL"],
+      title: "E-commerce App",
+      description: "Full-stack e-commerce platform with MERN stack",
+      tags: ["MongoDB", "Express", "React", "Node.js"],
     },
   ];
 
