@@ -7,15 +7,14 @@ const Hero = () => {
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-portfolio-bg via-portfolio-card to-portfolio-bg opacity-90"></div>
       
-      {/* 3D Scene Placeholder */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-20">
-        <div className="w-96 h-96 border-2 border-dashed border-portfolio-border rounded-lg flex items-center justify-center">
-          <div className="text-center text-portfolio-text-secondary">
-            <div className="text-6xl mb-4">🎮</div>
-            <p className="text-sm">Spline 3D Scene</p>
-            <p className="text-xs mt-1">Embed your iframe here</p>
-          </div>
-        </div>
+      {/* Spline 3D Scene */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-30">
+        <div 
+          dangerouslySetInnerHTML={{
+            __html: '<spline-viewer url="https://prod.spline.design/LEvjG3OETYd2GsRw/scene.splinecode" events="scroll" style="width: 100%; height: 100%;"></spline-viewer>'
+          }}
+          className="w-full h-full"
+        />
       </div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
