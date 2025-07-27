@@ -1,19 +1,18 @@
 import { Badge } from "@/components/ui/badge";
 const About = () => {
   const skills = [
-    // Front-End
-    "HTML5 & CSS3", "JavaScript (ES6+)", "React.js", "Next.js", "Tailwind CSS",
-    // Back-End  
-    "Node.js", "Express.js", "GraphQL", "JWT", "OAuth2",
-    // Databases
-    "MongoDB",
-    // DevOps & Hosting
-    "Git & GitHub", "Docker",
-    // AI & Automation
-    "Python", "OpenAI", "LangChain", "n8n", "Zapier",
-    // Blockchain & Web3
-    "Solidity", "Ethers.js", "Web3.js", "Polygon", "Ethereum"
-  ];
+  // Front-End
+  "HTML5 & CSS3", "JavaScript (ES6+)", "React.js", "Next.js", "Tailwind CSS",
+  // Back-End  
+  "Node.js", "Express.js", "GraphQL", "JWT", "OAuth2",
+  // Databases
+  "MongoDB",
+  // DevOps & Hosting
+  "Git & GitHub", "Docker",
+  // AI & Automation
+  "Python", "OpenAI", "LangChain", "n8n", "Zapier",
+  // Blockchain & Web3
+  "Solidity", "Ethers.js", "Web3.js", "Polygon", "Ethereum"];
   return <section id="about" className="py-20 px-6 max-w-6xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-start">
         {/* About Text */}
@@ -46,11 +45,9 @@ const About = () => {
           </h3>
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {skills.map(skill => 
-              <Badge key={skill} variant="secondary" className="bg-portfolio-accent/10 text-portfolio-accent border-portfolio-accent/20 hover:bg-portfolio-accent/20 transition-colors p-2 text-center justify-center text-xs">
+            {skills.map(skill => <Badge key={skill} variant="secondary" className="bg-portfolio-accent/10 text-portfolio-accent border-portfolio-accent/20 hover:bg-portfolio-accent/20 transition-colors p-2 text-center justify-center text-xs">
                 {skill}
-              </Badge>
-            )}
+              </Badge>)}
           </div>
 
           {/* Additional Stats */}
@@ -61,8 +58,7 @@ const About = () => {
             </div>
             <div className="text-center">
               
-              <div className="text-sm text-portfolio-text-secondary">Multiple 
-Projects Built</div>
+              <div className="text-sm text-portfolio-text-secondary">Projects Built</div>
             </div>
           </div>
         </div>
