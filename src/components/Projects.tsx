@@ -23,8 +23,20 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 max-w-6xl mx-auto">
-      <div className="text-center mb-16">
+    <section id="projects" className="relative py-20 px-6 max-w-6xl mx-auto overflow-hidden">
+      {/* Spline 3D Background */}
+      <div className="absolute inset-0 z-0 opacity-15 flex items-center justify-center">
+        <div 
+          dangerouslySetInnerHTML={{
+            __html: '<spline-viewer url="https://prod.spline.design/J3b0bFbzzKQJKku8/scene.splinecode" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"></spline-viewer>'
+          }}
+          className="w-full h-full"
+        />
+      </div>
+
+      {/* Content overlay */}
+      <div className="relative z-10">
+        <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-portfolio-text-primary mb-4">
           Featured <span className="text-gradient">Projects</span>
         </h2>
@@ -82,13 +94,14 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Coming Soon Message */}
-      <div className="text-center mt-12">
-        <div className="inline-flex items-center gap-3 glass-card px-6 py-3 rounded-full">
-          <div className="w-2 h-2 bg-portfolio-accent rounded-full animate-pulse"></div>
-          <span className="text-portfolio-text-secondary">
-            More projects launching soon...
-          </span>
+        {/* Coming Soon Message */}
+        <div className="text-center mt-12">
+          <div className="inline-flex items-center gap-3 glass-card px-6 py-3 rounded-full">
+            <div className="w-2 h-2 bg-portfolio-accent rounded-full animate-pulse"></div>
+            <span className="text-portfolio-text-secondary">
+              More projects launching soon...
+            </span>
+          </div>
         </div>
       </div>
     </section>
