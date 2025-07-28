@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <section id="contact" className="relative py-20 px-6 max-w-6xl mx-auto overflow-hidden">
       {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0 opacity-20 flex items-center justify-center">
+      <div className="absolute -top-20 left-0 right-0 bottom-0 z-0 opacity-20 flex items-center justify-center animate-fade-in">
         <div 
           dangerouslySetInnerHTML={{
             __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"></spline-viewer>'
