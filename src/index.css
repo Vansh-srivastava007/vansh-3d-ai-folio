@@ -122,6 +122,16 @@
     @apply bg-background text-foreground font-inter;
     background: var(--gradient-hero);
     min-height: 100vh;
+    scroll-behavior: smooth;
+  }
+
+  /* Scroll snapping for smooth navigation */
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    scroll-snap-align: start;
   }
 }
 
@@ -142,5 +152,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  /* Mobile performance optimizations for Spline */
+  @media (max-width: 768px) {
+    spline-viewer {
+      will-change: transform;
+      transform: translateZ(0);
+    }
+  }
+
+  /* Smooth transitions for mobile */
+  .mobile-optimized {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   }
 }

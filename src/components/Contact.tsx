@@ -32,29 +32,29 @@ const Contact = () => {
 
   return (
     <section id="contact" className="relative py-20 px-6 max-w-6xl mx-auto overflow-hidden">
-      {/* Spline 3D Background */}
-      <div className="absolute -top-20 left-0 right-0 bottom-0 z-0 opacity-20 flex items-center justify-center animate-fade-in">
+      {/* Spline 3D Background - Mobile Optimized */}
+      <div className="absolute -top-20 left-0 right-0 bottom-0 z-0 opacity-15 md:opacity-20 flex items-center justify-center animate-fade-in">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; transform: scale(0.6);" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full flex items-center justify-center"
+          className="w-full h-full scale-50 md:scale-75 lg:scale-100"
         />
       </div>
       
       {/* Content overlay */}
       <div className="relative z-10">
-        <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-portfolio-text-primary mb-4">
+        <div className="text-center mb-12 md:mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-portfolio-text-primary mb-4">
           Let's <span className="text-gradient">Connect</span>
         </h2>
-        <p className="text-portfolio-text-secondary text-lg max-w-2xl mx-auto">
+        <p className="text-portfolio-text-secondary text-base md:text-lg max-w-2xl mx-auto px-4">
           Have a project in mind or want to collaborate? I'd love to hear from you. 
           Drop me a message and let's build something amazing together.
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
         {/* Contact Form */}
         <Card className="glass-card border-portfolio-border">
           <CardHeader>

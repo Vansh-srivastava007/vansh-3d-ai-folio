@@ -24,29 +24,29 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative py-20 px-6 max-w-6xl mx-auto overflow-hidden">
-      {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0 opacity-15 flex items-center justify-center">
+      {/* Spline 3D Background - Mobile Optimized */}
+      <div className="absolute inset-0 z-0 opacity-10 md:opacity-15 flex items-center justify-center">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/J3b0bFbzzKQJKku8/scene.splinecode" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/J3b0bFbzzKQJKku8/scene.splinecode" style="width: 100%; height: 100%; transform: scale(0.7);" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full"
+          className="w-full h-full scale-50 md:scale-75 lg:scale-100"
         />
       </div>
 
       {/* Content overlay */}
       <div className="relative z-10">
-        <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-portfolio-text-primary mb-4">
+        <div className="text-center mb-12 md:mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-portfolio-text-primary mb-4">
           Featured <span className="text-gradient">Projects</span>
         </h2>
-        <p className="text-portfolio-text-secondary text-lg max-w-2xl mx-auto">
+        <p className="text-portfolio-text-secondary text-base md:text-lg max-w-2xl mx-auto px-4">
           No projects yet—coming soon! I'm currently working on some exciting projects 
           that will showcase my skills in MERN stack, AI automation, and blockchain development.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {placeholderProjects.map((project, index) => (
           <Card key={index} className="glass-card border-portfolio-border hover:border-portfolio-accent/50 transition-all duration-300 group">
             <CardHeader className="pb-4">

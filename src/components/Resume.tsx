@@ -22,18 +22,18 @@ const Resume = () => {
   ];
 
   return (
-    <section id="resume" className="py-20 px-6 max-w-6xl mx-auto">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-portfolio-text-primary mb-4">
+    <section id="resume" className="py-16 md:py-20 px-4 md:px-6 max-w-6xl mx-auto">
+      <div className="text-center mb-12 md:mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-portfolio-text-primary mb-4">
           Resume & <span className="text-gradient">Experience</span>
         </h2>
-        <p className="text-portfolio-text-secondary text-lg mb-8">
+        <p className="text-portfolio-text-secondary text-base md:text-lg mb-6 md:mb-8 px-4">
           Download my complete resume or view a quick snapshot of my background
         </p>
         
         <Button 
           size="lg"
-          className="bg-portfolio-accent hover:bg-portfolio-accent/90 text-portfolio-card font-semibold px-8 py-3 glow-effect"
+          className="bg-portfolio-accent hover:bg-portfolio-accent/90 text-portfolio-card font-semibold px-6 md:px-8 py-2 md:py-3 glow-effect w-full sm:w-auto"
           onClick={() => window.open('https://drive.google.com/file/d/1Ku0JVvz4AVJJ53EO70jqEVCE4g_axK1p/view?usp=drivesdk', '_blank')}
         >
           <Download className="w-5 h-5 mr-2" />
@@ -41,14 +41,14 @@ const Resume = () => {
         </Button>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         {/* Education */}
         <div>
-          <div className="flex items-center gap-3 mb-8">
-            <div className="p-3 bg-portfolio-accent/10 rounded-lg">
-              <GraduationCap className="w-6 h-6 text-portfolio-accent" />
+          <div className="flex items-center gap-3 mb-6 md:mb-8">
+            <div className="p-2 md:p-3 bg-portfolio-accent/10 rounded-lg">
+              <GraduationCap className="w-5 h-5 md:w-6 md:h-6 text-portfolio-accent" />
             </div>
-            <h3 className="text-2xl font-semibold text-portfolio-text-primary">Education</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-portfolio-text-primary">Education</h3>
           </div>
 
           <div className="space-y-6">
@@ -82,11 +82,11 @@ const Resume = () => {
 
         {/* Experience */}
         <div>
-          <div className="flex items-center gap-3 mb-8">
-            <div className="p-3 bg-portfolio-accent/10 rounded-lg">
-              <Briefcase className="w-6 h-6 text-portfolio-accent" />
+          <div className="flex items-center gap-3 mb-6 md:mb-8">
+            <div className="p-2 md:p-3 bg-portfolio-accent/10 rounded-lg">
+              <Briefcase className="w-5 h-5 md:w-6 md:h-6 text-portfolio-accent" />
             </div>
-            <h3 className="text-2xl font-semibold text-portfolio-text-primary">Experience</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-portfolio-text-primary">Experience</h3>
           </div>
 
           <div className="space-y-6">
