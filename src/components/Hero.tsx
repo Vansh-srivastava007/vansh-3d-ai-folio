@@ -15,6 +15,8 @@ const Hero = () => {
           }}
           className="w-full h-full"
         />
+        {/* Watermark overlay */}
+        <div className="absolute bottom-2 right-2 w-32 h-10 bg-gradient-to-tl from-portfolio-bg via-portfolio-bg/80 to-transparent backdrop-blur-md z-10 rounded-lg"></div>
       </div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">

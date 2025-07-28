@@ -41,7 +41,8 @@ const Contact = () => {
           className="w-full h-full"
         />
         {/* Watermark overlay */}
-        <div className="absolute bottom-4 right-4 w-24 h-8 bg-gradient-to-t from-portfolio-bg/90 to-transparent backdrop-blur-sm z-10"></div>
+        <div className="absolute bottom-2 right-2 w-32 h-10 bg-gradient-to-tl from-portfolio-bg via-portfolio-bg/90 to-transparent backdrop-blur-md z-10 rounded-lg"></div>
+        <div className="absolute bottom-0 right-0 w-40 h-12 bg-gradient-to-t from-portfolio-bg to-transparent z-10"></div>
       </div>
       
       {/* Content overlay */}
