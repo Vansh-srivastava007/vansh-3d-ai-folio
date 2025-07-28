@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         {/* Profile Image */}
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto rounded-full overflow-hidden glass-card glow-effect">
+          <div className="w-48 h-48 mx-auto rounded-full overflow-hidden glass-card glow-effect">
             <img 
               src="/lovable-uploads/b92b2639-1fd0-4891-a2c3-d37578439a0a.png" 
               alt="Vansh Srivastava"
