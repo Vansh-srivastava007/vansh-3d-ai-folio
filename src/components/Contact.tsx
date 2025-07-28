@@ -40,9 +40,10 @@ const Contact = () => {
           }}
           className="w-full h-full"
         />
-        {/* Watermark overlay */}
-        <div className="absolute bottom-2 right-2 w-32 h-10 bg-gradient-to-tl from-portfolio-bg via-portfolio-bg/90 to-transparent backdrop-blur-md z-10 rounded-lg"></div>
-        <div className="absolute bottom-0 right-0 w-40 h-12 bg-gradient-to-t from-portfolio-bg to-transparent z-10"></div>
+        {/* Watermark overlay - Enhanced coverage */}
+        <div className="absolute bottom-0 right-0 w-44 h-20 bg-gradient-to-tl from-portfolio-bg via-portfolio-bg/95 to-portfolio-bg/70 backdrop-blur-lg z-10"></div>
+        <div className="absolute bottom-0 right-0 w-48 h-16 bg-gradient-to-t from-portfolio-bg via-portfolio-bg/90 to-transparent z-10"></div>
+        <div className="absolute bottom-1 right-1 w-40 h-14 bg-portfolio-bg/95 backdrop-blur-xl z-10 rounded-lg"></div>
       </div>
       
       {/* Content overlay */}
