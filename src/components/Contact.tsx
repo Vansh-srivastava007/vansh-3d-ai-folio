@@ -32,13 +32,13 @@ const Contact = () => {
 
   return (
     <section id="contact" className="relative py-20 px-6 max-w-6xl mx-auto overflow-hidden">
-      {/* Spline 3D Background - Mobile Optimized */}
-      <div className="absolute -top-20 left-0 right-0 bottom-0 z-0 opacity-15 md:opacity-20 flex items-center justify-center animate-fade-in">
+      {/* Spline 3D Background */}
+      <div className="absolute inset-0 z-0 opacity-15 flex items-center justify-center">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; transform: scale(0.6);" loading="lazy"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; min-height: 400px;" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full scale-50 md:scale-75 lg:scale-100"
+          className="w-full h-full"
         />
       </div>
       

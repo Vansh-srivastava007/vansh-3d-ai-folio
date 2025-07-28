@@ -24,13 +24,13 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative py-20 px-6 max-w-6xl mx-auto overflow-hidden">
-      {/* Spline 3D Background - Mobile Optimized */}
-      <div className="absolute inset-0 z-0 opacity-10 md:opacity-15 flex items-center justify-center">
+      {/* Spline 3D Background */}
+      <div className="absolute inset-0 z-0 opacity-15 flex items-center justify-center">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/J3b0bFbzzKQJKku8/scene.splinecode" style="width: 100%; height: 100%; transform: scale(0.7);" loading="lazy"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/J3b0bFbzzKQJKku8/scene.splinecode" style="width: 100%; height: 100%; min-height: 400px;" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full scale-50 md:scale-75 lg:scale-100"
+          className="w-full h-full"
         />
       </div>
 

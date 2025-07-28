@@ -154,16 +154,21 @@
     background-clip: text;
   }
 
-  /* Mobile performance optimizations for Spline */
+  /* Spline viewer responsiveness */
+  spline-viewer {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
   @media (max-width: 768px) {
     spline-viewer {
-      will-change: transform;
-      transform: translateZ(0);
+      min-height: 300px !important;
     }
   }
 
-  /* Smooth transitions for mobile */
-  .mobile-optimized {
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  @media (min-width: 768px) {
+    spline-viewer {
+      min-height: 500px !important;
+    }
   }
 }

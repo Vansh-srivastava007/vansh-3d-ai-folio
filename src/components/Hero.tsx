@@ -7,13 +7,13 @@ const Hero = () => {
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-portfolio-bg via-portfolio-card to-portfolio-bg opacity-90"></div>
       
-      {/* Spline 3D Scene - Mobile Optimized */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-30 md:opacity-30">
+      {/* Spline 3D Scene */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-20">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/GYwhGk0jMtJYbBwK/scene.splinecode" events="scroll" style="width: 100%; height: 100%; transform: scale(0.8);" loading="lazy"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/GYwhGk0jMtJYbBwK/scene.splinecode" style="width: 100%; height: 100%; min-height: 300px;" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full scale-75 md:scale-100"
+          className="w-full h-full"
         />
       </div>
 
