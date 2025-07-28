@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex items-center justify-center opacity-30">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/LEvjG3OETYd2GsRw/scene.splinecode" events="scroll" style="width: 100%; height: 100%;"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/GYwhGk0jMtJYbBwK/scene.splinecode" events="scroll" style="width: 100%; height: 100%;"></spline-viewer>'
           }}
           className="w-full h-full"
         />
