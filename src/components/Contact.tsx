@@ -38,7 +38,7 @@ const Contact = () => {
           dangerouslySetInnerHTML={{
             __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; min-height: 400px; transform: translateY(-15px);" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full"
+          className="w-full h-full sm:scale-100 scale-125 sm:translate-y-0 -translate-y-2"
         />
         {/* Watermark overlay - Enhanced coverage */}
         <div className="absolute bottom-0 right-0 w-44 h-20 bg-gradient-to-tl from-portfolio-bg via-portfolio-bg/95 to-portfolio-bg/70 backdrop-blur-lg z-10"></div>

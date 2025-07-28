@@ -13,7 +13,7 @@ const Hero = () => {
           dangerouslySetInnerHTML={{
             __html: '<spline-viewer url="https://prod.spline.design/GYwhGk0jMtJYbBwK/scene.splinecode" style="width: 100%; height: 100%; min-height: 300px;" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full"
+          className="w-full h-full sm:scale-100 scale-110 sm:translate-y-0 translate-y-4"
         />
         {/* Watermark overlay - Enhanced coverage */}
         <div className="absolute bottom-0 right-0 w-40 h-16 bg-gradient-to-tl from-portfolio-bg via-portfolio-bg/95 to-portfolio-bg/60 backdrop-blur-lg z-10"></div>
