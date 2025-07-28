@@ -31,8 +31,20 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-6 max-w-6xl mx-auto">
-      <div className="text-center mb-16">
+    <section id="contact" className="relative py-20 px-6 max-w-6xl mx-auto overflow-hidden">
+      {/* Spline 3D Background */}
+      <div className="absolute inset-0 z-0 opacity-20">
+        <div 
+          dangerouslySetInnerHTML={{
+            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%;"></spline-viewer>'
+          }}
+          style={{ width: '100%', height: '100%' }}
+        />
+      </div>
+      
+      {/* Content overlay */}
+      <div className="relative z-10">
+        <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-portfolio-text-primary mb-4">
           Let's <span className="text-gradient">Connect</span>
         </h2>
@@ -163,6 +175,7 @@ const Contact = () => {
             </CardContent>
           </Card>
         </div>
+      </div>
       </div>
     </section>
   );
