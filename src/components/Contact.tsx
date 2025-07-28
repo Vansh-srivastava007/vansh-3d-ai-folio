@@ -33,13 +33,15 @@ const Contact = () => {
   return (
     <section id="contact" className="relative py-20 px-6 max-w-6xl mx-auto overflow-hidden">
       {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0 opacity-15 flex items-center justify-center">
+      <div className="absolute inset-0 z-0 opacity-25 flex items-center justify-center">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; min-height: 400px;" loading="lazy"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; min-height: 400px; transform: translateY(-15px);" loading="lazy"></spline-viewer>'
           }}
           className="w-full h-full"
         />
+        {/* Watermark overlay */}
+        <div className="absolute bottom-4 right-4 w-24 h-8 bg-gradient-to-t from-portfolio-bg/90 to-transparent backdrop-blur-sm z-10"></div>
       </div>
       
       {/* Content overlay */}
