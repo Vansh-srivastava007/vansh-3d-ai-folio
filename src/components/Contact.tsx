@@ -36,9 +36,9 @@ const Contact = () => {
       <div className="absolute inset-0 z-0 opacity-25 flex items-center justify-center">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; min-height: 400px; transform: translateY(-15px);" loading="lazy"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/9FcelD7PciXTdj8K/scene.splinecode" style="width: 100%; height: 100%; min-height: 500px; transform: translateY(-15px);" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full sm:scale-100 scale-125 sm:translate-y-0 -translate-y-2"
+          className="w-full h-full md:scale-100 scale-140 md:translate-y-0 -translate-y-10 md:translate-x-0 translate-x-0"
         />
         {/* Watermark overlay - Enhanced coverage */}
         <div className="absolute bottom-0 right-0 w-44 h-20 bg-gradient-to-tl from-portfolio-bg via-portfolio-bg/95 to-portfolio-bg/70 backdrop-blur-lg z-10"></div>

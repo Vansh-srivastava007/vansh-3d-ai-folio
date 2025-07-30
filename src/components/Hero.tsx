@@ -11,9 +11,9 @@ const Hero = () => {
       <div className="absolute inset-0 flex items-center justify-center opacity-20">
         <div 
           dangerouslySetInnerHTML={{
-            __html: '<spline-viewer url="https://prod.spline.design/GYwhGk0jMtJYbBwK/scene.splinecode" style="width: 100%; height: 100%; min-height: 300px;" loading="lazy"></spline-viewer>'
+            __html: '<spline-viewer url="https://prod.spline.design/GYwhGk0jMtJYbBwK/scene.splinecode" style="width: 100%; height: 100%; min-height: 400px;" loading="lazy"></spline-viewer>'
           }}
-          className="w-full h-full sm:scale-100 scale-110 sm:translate-y-0 translate-y-4"
+          className="w-full h-full md:scale-100 scale-125 md:translate-y-0 -translate-y-8 md:translate-x-0 translate-x-0"
         />
         {/* Watermark overlay - Enhanced coverage */}
         <div className="absolute bottom-0 right-0 w-40 h-16 bg-gradient-to-tl from-portfolio-bg via-portfolio-bg/95 to-portfolio-bg/60 backdrop-blur-lg z-10"></div>
